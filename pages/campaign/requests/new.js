@@ -36,7 +36,7 @@ class RequestNew extends Component {
 				recipient
 				).send({from: accounts[0]});
 
-			Router.pushRoute(`/campaigns/${this.props.address}/requests`);
+			Router.pushRoute(`/campaign/${this.props.address}/requests`);
 		} catch (err) {
 			this.setState({ errorMessage: err.message });
 		}
@@ -47,7 +47,7 @@ class RequestNew extends Component {
 	render() {
 		return (
 			<Layout>
-				<Link route={`/campaigns/${this.props.address}/requests`}>
+				<Link route={`/campaign/${this.props.address}/requests`}>
 					<a>Back</a>
 				</Link>
 				<h3>Create a Request</h3>
