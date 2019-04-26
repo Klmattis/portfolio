@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Layout from '../../../components/layout';
+import Layout from '../../../components/campaign/layout';
 import { Button, Table } from 'semantic-ui-react';
 import { Link } from '../../../routes';
 import Campaign from '../../../ethereum/campaign/campaign';
-import RequestRow from '../../../components/requestRow';
+import RequestRow from '../../../components/campaign/requestRow';
 
 class RequestIndex extends Component {
 	static async getInitialProps(props) {
