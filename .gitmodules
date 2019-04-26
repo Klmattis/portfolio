@@ -1,0 +1,3 @@
+[submodule "ethereum/campaign"]
+	path = ethereum/campaign
+	url = https://github.com/Klmattis/campaign
