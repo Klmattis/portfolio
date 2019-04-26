@@ -11,7 +11,6 @@ if (typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
   	'https://rinkeby.infura.io/v3/c46d445e4e1b4f398737bcc8922167f8'
   );
   web3 = new Web3(provider, null, {transactionConfirmationBlocks: 1});
-  console.log(web3.eth.transactionConfirmationBlocks)
 }
 
 export default web3;

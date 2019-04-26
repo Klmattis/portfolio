@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Table, Button } from 'semantic-ui-react';
 import web3 from '../ethereum/web3';
-import Campaign from '../ethereum/campaign';
+import Campaign from '../ethereum/campaign/campaign';
 
 class RequestRow extends Component {
 	onApprove = async () => {
