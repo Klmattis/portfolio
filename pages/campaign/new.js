@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Button, Input, Message } from 'semantic-ui-react';
-import Layout from '../../components/campaign/layout';
+import Layout from '../../components/layout';
+import CampaignHeader from '../../components/campaign/header';
 import factory from '../../ethereum/campaign/factory';
 import web3 from '../../ethereum/web3';
 import { Router } from '../../routes';
@@ -35,6 +36,7 @@ class CampaignNew extends Component {
 	render() {
 		return (
 			<Layout>
+				<CampaignHeader />
 				<h3>Create a Campaign</h3>
 
 				<Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>

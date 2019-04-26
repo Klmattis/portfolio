@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Layout from '../../../components/campaign/layout';
+import Layout from '../../../components/layout';
+import CampaignHeader from '../../../components/campaign/header';
 import { Button, Table } from 'semantic-ui-react';
 import { Link } from '../../../routes';
 import Campaign from '../../../ethereum/campaign/campaign';
@@ -38,6 +39,7 @@ class RequestIndex extends Component {
 
 		return (
 			<Layout>
+				<CampaignHeader />
 				<h3>Requests</h3>
 				<Link route={`/campaign/${this.props.address}/requests/new`}>
 					<a>

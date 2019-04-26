@@ -3,7 +3,8 @@ import { Form, Button, Input, Message } from 'semantic-ui-react';
 import Campaign from '../../../ethereum/campaign/campaign';
 import web3 from '../../../ethereum/web3';
 import { Link, Router } from '../../../routes';
-import Layout from '../../../components/campaign/layout';
+import Layout from '../../../components/layout';
+import CampaignHeader from '../../../components/campaign/header';
 
 class RequestNew extends Component {
 	state = {
@@ -47,6 +48,7 @@ class RequestNew extends Component {
 	render() {
 		return (
 			<Layout>
+				<CampaignHeader />
 				<Link route={`/campaign/${this.props.address}/requests`}>
 					<a>Back</a>
 				</Link>
