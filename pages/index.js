@@ -32,7 +32,7 @@ class Index extends Component {
 			  <div className='live-text'>PROJECTS CURRENTLY UNDER DEVELOPMENT</div>
 			  <Card.Group className='portfolio-card-group'>
 				  <Card>
-				    <Link route={`/campaign`}>
+				    <Link route={`/underconstruction`}>
 				    	<Image as='a' src='/static/images/vitae-image.png' />
 				    </Link>
 				    <Card.Content>
@@ -47,7 +47,7 @@ class Index extends Component {
 				    </Card.Content>
 				  </Card>
 				  <Card>
-				    <Link route={`/campaign`}>
+				    <Link route={`/underconstruction`}>
 				    	<Image as='a' src='/static/images/enact-image.png' />
 				    </Link>
 				    <Card.Content>
@@ -62,7 +62,7 @@ class Index extends Component {
 				    </Card.Content>
 				  </Card>
 				  <Card>
-				  	<Link route={`/campaign`}>
+				  	<Link route={`/underconstruction`}>
 				    	<Image as='a' src='/static/images/comply-image.png' />
 				    </Link>
 				    <Card.Content>
@@ -77,7 +77,7 @@ class Index extends Component {
 				    </Card.Content>
 				  </Card>
 				  <Card>
-				  	<Link route={`/campaign`}>
+				  	<Link route={`/underconstruction`}>
 				    	<Image as='a' src='/static/images/panacea-image.png' />
 				    </Link>
 				    <Card.Content>
@@ -92,7 +92,7 @@ class Index extends Component {
 				    </Card.Content>
 				  </Card>
 				  <Card>
-				    <Link route={`/campaign`}>
+				    <Link route={`/underconstruction`}>
 				    	<Image as='a' src='/static/images/provenance-image.png' />
 				    </Link>
 				    <Card.Content>

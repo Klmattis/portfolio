@@ -1,6 +1,7 @@
 const routes = require('next-routes')();
 
 routes
+	.add('/underconstruction', '/underconstruction')
 	.add('/campaign', '/campaign/campaign')
 	.add('/campaign/new', '/campaign/new')
 	.add('/campaign/:address', '/campaign/show')

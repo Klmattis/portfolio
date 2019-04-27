@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'semantic-ui-react';
+import { Container, Modal, Header, Image } from 'semantic-ui-react';
 import Head from 'next/head';
 import { Link } from '../routes';
 
@@ -24,7 +24,20 @@ export default (props) => {
 			      <div class="d2">PORT-FOL.IO</div>
 			      <div class="d3">
 							<a href="https://github.com/Klmattis/portfolio">GitHub</a>
-							<a>Contact</a>
+							<Modal trigger={<a>Contact</a>}>
+						    <Modal.Header>KEITH MATTISON</Modal.Header>
+						    <Modal.Content image>
+						      <Image wrapped size='medium' src='/static/images/scrooge.png' />
+						      <Modal.Description>
+						        <Header>Contact Information</Header>
+						        <pre>Address:    5710 Oak Meadow Lane</pre>
+						        <pre className='data'>            Apt #2509</pre>
+						        <pre className='data'>            Raleigh, NC 27612</pre>
+						        <pre className='data'>Phone:      910.620.2577</pre>
+						        <pre className='data'>Email:      klmattis@ncsu.edu</pre>
+						      </Modal.Description>
+						    </Modal.Content>
+						  </Modal>
 			      </div>
 				  </div>
 				</div>
