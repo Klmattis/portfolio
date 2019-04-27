@@ -1,5 +1,115 @@
-@backgroundColor: #f9f9f9;
+@lightGrey: 			#f9f9f9;
+@lightMedGrey:		#a6a6a6;
+@mediumGrey:			#545454;
+@backgroundColor: @lightGrey;
+@headerLinkColor: @lightMedGrey;
 
 body {
 	background-color: @backgroundColor;
+	font-family: 'Raleway', sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: @backgroundColor;
+  top: 0;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: @headerLinkColor;
+  letter-spacing: 3px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: solid @backgroundColor;
+	font-size: 18px;
+}
+
+.navbar a:hover {
+  border-bottom: solid @headerLinkColor;
+  color: @headerLinkColor;
+  cursor: pointer;
+}
+
+.header-table {
+    display: table;
+    width: 100%;
+}
+.tr {
+    display: table-row;
+}
+.d1 {
+    display: table-cell;
+    width: 20.5%;
+}
+.d2 {
+    display: table-cell;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: @mediumGrey;
+    letter-spacing: 8px;
+    vertical-align: middle;
+    width: 59%;
+}
+.d3 {
+    display: table-cell;
+    text-align: right;
+    width: 20.5%;
+}
+
+.by-line {
+	  font-family: 'Raleway', sans-serif;
+	  font-size: 18px;
+	  font-weight: bold;
+	  color: @mediumGrey;
+	  letter-spacing: 5px;
+	  text-align: center;
+	  padding-bottom: 30px;
+}
+
+.large-padding-top {
+	padding-top: 100px;
+}
+
+.large-padding-bottom {
+	padding-bottom: 150px;
+}
+
+.large-text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 52px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 8px;
+	line-height: 72px;
+}
+
+.live-text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	color: @mediumGrey;
+	letter-spacing: 3px;
+	padding-bottom: 15px;
+	margin-bottom: 20px;
+	border-bottom: solid @lightMedGrey;
+}
+
+.ui.cards {
+	padding-bottom: 50px;
+}
+
+.ui.card, .ui.cards > .card {
+	width: 176px;
+}
+
+.ui.card > .content > .header, .ui.cards > .card > .content > .header {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
 }
