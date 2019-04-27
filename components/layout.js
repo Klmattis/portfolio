@@ -14,15 +14,15 @@ export default (props) => {
 			  <script src='//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js' ></script>
 			</Head>
 			<div className='navbar'>
-				<div class='header-table'>
-			    <div class='tr'>
-			      <div class='d1'>
+				<div className='header-table'>
+			    <div className='tr'>
+			      <div className='d1'>
 							<Link route={`/`}>
 								<a>Home</a>
 							</Link>
 			      </div>
-			      <div class='d2'>PORT-FOL.IO</div>
-			      <div class='d3'>
+			      <div className='d2'>PORT-FOL.IO</div>
+			      <div className='d3'>
 							<a href='https://github.com/Klmattis/portfolio'>GitHub</a>
 							<Modal size='small' trigger={<a>Contact</a>}>
 						    <Modal.Header>KEITH L. MATTISON</Modal.Header>
