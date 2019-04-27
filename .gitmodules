@@ -1,3 +1,6 @@
 [submodule "ethereum/campaign"]
 	path = ethereum/campaign
 	url = https://github.com/Klmattis/campaign
+[submodule "ethereum/vitae"]
+	path = ethereum/vitae
+	url = https://github.com/Klmattis/vitae
