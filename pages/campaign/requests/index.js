@@ -43,7 +43,7 @@ class RequestIndex extends Component {
 				<h3>Requests</h3>
 				<Link route={`/campaign/${this.props.address}/requests/new`}>
 					<a>
-						<Button primary floated="right" style={{ marginBottom:"10px" }}>Add Request</Button>
+						<Button primary floated='right' style={{ marginBottom:'10px' }}>Add Request</Button>
 					</a>
 				</Link>
 				<Table>

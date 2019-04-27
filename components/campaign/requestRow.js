@@ -35,12 +35,12 @@ class RequestRow extends Component {
 				<Cell>{parseInt(request.approvalCount)}/{this.props.approversCount}</Cell>
 				<Cell>
 					{request.complete ? null : (
-						<Button color="green" onClick={this.onApprove}>Approve</Button>
+						<Button color='green' onClick={this.onApprove}>Approve</Button>
 					)}
 				</Cell>
 				<Cell>
 					{request.complete ? null : (
-						<Button color="teal" onClick={this.onFinalize}>Finalize</Button>
+						<Button color='teal' onClick={this.onFinalize}>Finalize</Button>
 					)}
 				</Cell>
 			</Row>

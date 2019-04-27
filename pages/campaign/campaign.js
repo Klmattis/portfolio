@@ -34,12 +34,12 @@ class CampaignIndex extends Component {
 				<CampaignHeader />
 				<div>
 					<h3>Open Campaigns</h3>
-					<Link	route="/campaign/new">
+					<Link	route='/campaign/new'>
 						<a>
 							<Button 
-								floated="right"
-								content="Create Campaign" 
-								icon="add circle" 
+								floated='right'
+								content='Create Campaign' 
+								icon='add circle' 
 								primary
 							/>
 						</a>
