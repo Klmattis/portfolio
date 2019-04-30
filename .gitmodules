@@ -4,3 +4,6 @@
 [submodule "ethereum/vitae"]
 	path = ethereum/vitae
 	url = https://github.com/Klmattis/vitae
+[submodule "ethereum/enact"]
+	path = ethereum/enact
+	url = https://github.com/Klmattis/enact
