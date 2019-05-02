@@ -9,6 +9,8 @@ routes
 	.add('/campaign/:address/requests', '/campaign/requests/index')
 	.add('/campaign/:address/requests/new', '/campaign/requests/new')
 
-	.add('/vitae', '/vitae/vitae');
+	.add('/vitae', '/vitae/vitae')
+
+	.add('/enact', '/enact/enact');
 
 module.exports = routes;

@@ -7,21 +7,6 @@ class UnfinishedCards extends Component {
 		return (
 		  <Card.Group className='portfolio-card-group'>
 			  <Card>
-			    <Link route={`/underconstruction`}>
-			    	<Image as='a' src='/static/images/enact-image.png' />
-			    </Link>
-			    <Card.Content>
-			      <Card.Header>
-							<div>ENACT</div>
-						</Card.Header>
-			      <Card.Meta><a href='https://github.com/Klmattis/enact'>GitHub Repo</a></Card.Meta>
-			      <Card.Description>Referendum Contract</Card.Description>
-			    </Card.Content>
-			    <Card.Content extra>
-			      <div>Provably Fair Voting</div>
-			    </Card.Content>
-			  </Card>
-			  <Card>
 			  	<Link route={`/underconstruction`}>
 			    	<Image as='a' src='/static/images/comply-image.png' />
 			    </Link>

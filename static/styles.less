@@ -9,6 +9,10 @@ body {
 	/*font-family: 'Raleway', sans-serif;*/
 }
 
+.centered-text {
+	text-align: center;
+}
+
 .navbar {
   overflow: hidden;
   background-color: @backgroundColor;
@@ -81,6 +85,10 @@ body {
 	padding-bottom: 120px;
 }
 
+.medium-padding-bottom {
+	padding-bottom: 50px;
+}
+
 .large-text {
 	font-family: 'Raleway', sans-serif;
 	font-size: 52px;
@@ -90,7 +98,7 @@ body {
 	line-height: 72px;
 }
 
-.live-text {
+.live-text, .referendum-section-text {
 	font-family: 'Raleway', sans-serif;
 	font-size: 26px;
 	color: @mediumGrey;
@@ -118,6 +126,10 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	letter-spacing: 2px;
+}
+
+.ui.card > .content, .ui.cards > .card > .content {
+	font-family: 'Raleway', sans-serif;
 }
 
 .ui.cards ~ .ui.cards {
@@ -197,4 +209,49 @@ body {
 
 .workexperience-duties-text, .educations-degree-text {
 	font-size: 16px;
+}
+
+.enact-vote-title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.enact-vote-link {
+	padding-top: 20px;
+}
+
+.enact-vote-buttons {
+	width: 100%;
+}
+
+.enact-vote-button {
+	font-family: 'Raleway', sans-serif;
+	width: 48.67%;
+}
+
+.enact-vote-approved {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	letter-spacing: 3px;
+	color: green;
+	text-align: center;
+}
+
+.enact-vote-rejected {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	letter-spacing: 3px;
+	color: red;
+	text-align: center;
+}
+
+.enact-vote-private {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	letter-spacing: 3px;
+	color: @mediumGrey;
+	text-align: center;
+	padding-top: 7px;
 }

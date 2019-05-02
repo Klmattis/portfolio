@@ -36,6 +36,21 @@ class RinkebyCards extends Component {
 			      <div>Ethical Procurement</div>
 			    </Card.Content>
 			  </Card>
+			  <Card>
+			    <Link route={`/enact`}>
+			    	<Image as='a' src='/static/images/enact-image.png' />
+			    </Link>
+			    <Card.Content>
+			      <Card.Header>
+							<div>ENACT</div>
+						</Card.Header>
+			      <Card.Meta><a href='https://github.com/Klmattis/enact'>GitHub Repo</a></Card.Meta>
+			      <Card.Description>Referendum Contract</Card.Description>
+			    </Card.Content>
+			    <Card.Content extra>
+			      <div>Provably Fair Voting</div>
+			    </Card.Content>
+			  </Card>
 			</Card.Group>
 		);
 	}
