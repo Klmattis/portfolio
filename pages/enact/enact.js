@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button, Divider } from 'semantic-ui-react';
+import { Card, Button, Divider, Reveal } from 'semantic-ui-react';
 import Layout from '../../components/layout';
 import factory from '../../ethereum/enact/factory';
 import Referendum from '../../ethereum/enact/enact';
@@ -7,10 +7,7 @@ import web3 from '../../ethereum/web3';
 import { Link } from '../../routes';
 
 class EnactIndex extends Component {
-	static async getInitialProps() {
-		const accounts = await web3.eth.getAccounts();
-		const myAddress = accounts[0];
-
+	static async getInitialProps(props) {
 		const referendumAddresses = await factory.methods.getDeployedReferendums().call();
 		let openReferendums = [];
 		let completedReferendums = [];
@@ -38,23 +35,20 @@ class EnactIndex extends Component {
 			}
 		}
 
-		return { myAddress, openReferendums, completedReferendums };
+		return { openReferendums, completedReferendums };
 	}
 
 	onClick = async (address, vote) => {
 		const referendum = Referendum(address);
-		this.setState({ loading: true, errorMessage: '' });
 		try {
 			const accounts = await web3.eth.getAccounts();
+			console.log(accounts[0]);
 			await referendum.methods.vote(vote).send({
 				from: accounts[0]
 			});
 			Router.pushRoute('/enact');
 		} catch (err) {
-			this.setState({ errorMessage: err.message });
 		}
-
-		this.setState({ loading: false });
 	}
 
 	renderOpenReferendums() {
@@ -86,7 +80,15 @@ class EnactIndex extends Component {
           			</div>
           			)
 			        : (	
-			        	<div className='enact-vote-private'>PRIVATE VOTE</div>
+			        	<Reveal animated='fade'>
+							    <Reveal.Content visible style={{ backgroundColor: 'white', width: '100%', height: '100%', pointerEvents: 'none' }}>
+							    	<div className='enact-vote-private'>PRIVATE VOTE</div>
+							    </Reveal.Content>
+							    <Reveal.Content hidden>
+		        					<Button onClick={() => {this.onClick(referendum.address, true)}} className='enact-vote-button' basic color='green'>VOTE YEA</Button>
+		          				<Button onClick={() => {this.onClick(referendum.address, false)}} className='enact-vote-button' basic color='red'>VOTE NAY</Button>
+							    </Reveal.Content>
+							  </Reveal>
           			)
 			      }
 						</div>
