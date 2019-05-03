@@ -19,7 +19,7 @@ This site is hosted by a small AWS Lightsail instance running Debian 16.04 with 
 ## Installation
 Use the following steps to install the application locally:
 1. Clone this repository into a local directory
-2. Run the following in the root directory
+2. Run the following in the root directory:
 ```bash
 npm install 
 ```
