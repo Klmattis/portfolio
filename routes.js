@@ -11,6 +11,7 @@ routes
 
 	.add('/vitae', '/vitae/vitae')
 
-	.add('/enact', '/enact/enact');
+	.add('/enact', '/enact/enact')
+	.add('/enact/:address', '/enact/show');
 
 module.exports = routes;

@@ -6,7 +6,7 @@ import Vitae from '../../ethereum/vitae/vitae';
 
 class VitaeIndex extends Component {
 
-	static async getInitialProps(props) {
+	static async getInitialProps() {
 		const vitaes = await factory.methods.getDeployedVitaes().call();
 		const vitae = Vitae(vitaes[0]);
 		const owner = await vitae.methods.owner().call();

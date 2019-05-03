@@ -86,7 +86,11 @@ body {
 }
 
 .medium-padding-bottom {
-	padding-bottom: 50px;
+	padding-bottom: 60px;
+}
+
+.tiny-padding-bottom {
+	padding-bottom: 15px;
 }
 
 .large-text {
@@ -110,7 +114,6 @@ body {
 
 .ui.header, .ui.modal > .header:not(.ui) {
 	font-family: 'Raleway', sans-serif;
-	font-size: 26px;
 	letter-spacing: 3px;
 }
 
@@ -254,4 +257,27 @@ body {
 	color: @mediumGrey;
 	text-align: center;
 	padding-top: 7px;
+}
+
+.card-no-card > .ui.cards > .card {
+	background: @lightGrey;
+	box-shadow: unset;
+	-webkit-box-shadow: unset;
+}
+
+.card-no-card > .ui.cards > .ui.card > .content > .header:not(.ui), .ui.cards > .card > .content > .header:not(.ui), .card-no-card > .ui.cards > .ui.card > .content > .header + .description {
+	font-family: 'Raleway', sans-serif;
+}
+
+.enact-go-back, .enact-new-referendum {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.ui.horizontal.divider {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	letter-spacing: 3px;
+	color: @mediumGrey;
 }
