@@ -10,7 +10,7 @@ The portfolio project serves as a landing page to various independent submodules
 
 ## Implementation
 The portfolio project is a NodeJS application that uses NextJS as a routing solution. The application uses ReactJS as a front-end framework using Semantic UI styling to provide a clean, appealing user interface.
-Projects showcased in the app interact with active, deployed smart contracts that live on the Rinkeby test network. All information displayed in the application is gathered through function calls to these smart contracts.
+Projects showcased in the app interact with active, deployed smart contracts that live on the Rinkeby test network using the Web3 library. All information displayed in the application is gathered through function calls to these smart contracts.
 
 A live version of the project can be found at https://port-fol.io.
 
